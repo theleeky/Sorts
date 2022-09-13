@@ -2,7 +2,7 @@ package com.sparta;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class MergeSort implements Sorter {
     public int[] sortArray(int[] arrayToSort){
         return sort(arrayToSort, 0, arrayToSort.length - 1);
     }

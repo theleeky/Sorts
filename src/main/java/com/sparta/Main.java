@@ -21,7 +21,7 @@ public class Main {
 
         int[] array = {6,4,3,2};
         BinaryTree tree = new BinaryTree();
-        int[] myTree = tree.binarySort(array);
+        int[] myTree = tree.sortArray(array);
         System.out.println(Arrays.toString(myTree));
 
 

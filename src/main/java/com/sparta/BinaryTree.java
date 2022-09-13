@@ -2,11 +2,11 @@ package com.sparta;
 
 import java.util.ArrayList;
 
-public class BinaryTree {
+public class BinaryTree implements Sorter{
 
     Node root;
 
-    public int[] binarySort(int[] arrayToSort){
+    public int[] sortArray(int[] arrayToSort){
         Node tree = createBinaryTree(arrayToSort).root;
         // create empty ArrayList
         ArrayList newArray = new ArrayList<>();

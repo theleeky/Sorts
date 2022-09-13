@@ -72,6 +72,14 @@ I've also tested this implementation using Jupiter.
 ```
 ---
 ### Binary Sort
+The last sorting algorithm is the implementation of a Binary Tree. This
+works by creating a new binary tree data structure. The binary tree 
+is very useful for searching for items as it greatly minimises the number
+of comparisons it takes to find a value.
+
+```java
+
+```
 
 ---
 ### Comparison

@@ -128,3 +128,7 @@ I have also used Jupiter to test this implementation.
 ---
 ### Comparison
 
+Bubble Sort Avg time: 258ms
+Merge Sort Avg time: 17ms
+Binary Sort Avg time: 15ms
+

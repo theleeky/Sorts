@@ -62,5 +62,12 @@ class SortTests{
         Assertions.assertArrayEquals(expected, binaryTree.sortArray(array));
     }
 
+    @Test
+    @DisplayName("Test if random array generator generates correct array length")
+    void arrayGenerator(){
+        SortManager sortManager = new SortManager();
+        Assertions.assertEquals(10, sortManager.arrayGenerator(10).length);
+    }
+
 
 }

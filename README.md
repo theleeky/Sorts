@@ -75,11 +75,55 @@ I've also tested this implementation using Jupiter.
 The last sorting algorithm is the implementation of a Binary Tree. This
 works by creating a new binary tree data structure. The binary tree 
 is very useful for searching for items as it greatly minimises the number
-of comparisons it takes to find a value.
+of comparisons it takes to find a value.\
+This is a visual representation of a binary tree:
+
+
+![binarytree](images/binarytree.png)
+
+As seen in the image above, each node has a left child node which is smaller 
+and a right child node which is larger. Nodes can be represented by:
+```java
+public class Node {
+    int value;
+    Node left;
+    Node right;
+
+    Node(int value) {
+        this.value = value;
+        right = null;
+        left = null;
+    }
+}
+```
+The binary tree is created using:
 
 ```java
-
+    private BinaryTree createBinaryTree(int[] arrayToSort) {
+        BinaryTree bt = new BinaryTree();
+        for (int j : arrayToSort) {
+            bt.add(j);
+        }
+        return bt;
+    }
 ```
+This is a snippet of the entire code, which is responsible for populating the 
+binary tree with the unsorted array. In the creation of the binary tree, the array
+becomes sorted and all that is left to do is to populate it back into a new int[] 
+array, in order.\
+\
+I have also used Jupiter to test this implementation.
+```java
+  @Test
+    @DisplayName("Test if BinaryTree sorts")
+    void binarySort(){
+        BinaryTree binaryTree = new BinaryTree();
+        int[] array = {4,2,9,1};
+        int[] expected = {1,2,4,9};
+        Assertions.assertArrayEquals(expected, binaryTree.sortArray(array));
+    }
+```
+
 
 ---
 ### Comparison

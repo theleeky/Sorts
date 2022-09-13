@@ -9,7 +9,7 @@ public class BinaryTree implements Sorter{
     public int[] sortArray(int[] arrayToSort){
         Node tree = createBinaryTree(arrayToSort).root;
         // create empty ArrayList
-        ArrayList newArray = new ArrayList<>();
+        ArrayList<Object> newArray = new ArrayList<>();
         // populate ArrayList
         intArray(tree, newArray);
         // to int[] array
@@ -44,8 +44,8 @@ public class BinaryTree implements Sorter{
         root = addRecursive(root, value);
     }
 
-    // tranversing through binary tree, adding numbers in order to an ArrayList
-    private void intArray(Node node, ArrayList newArray) {
+    // traversing through binary tree, adding numbers in order to an ArrayList
+    private void intArray(Node node, ArrayList<Object> newArray) {
         if (node == null) {
             return;
         }

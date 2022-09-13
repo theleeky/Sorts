@@ -7,7 +7,7 @@ public class MergeSort implements Sorter {
         return sort(arrayToSort, 0, arrayToSort.length - 1);
     }
 
-    public int[] merge(int a[], int b[]){
+    public int[] merge(int[] a, int[] b){
 
         // counter variables
         // i for a, j is for b, k is for r
@@ -41,7 +41,7 @@ public class MergeSort implements Sorter {
         return mergedArray;
     }
 
-    public int[] sort(int arr[], int left, int right){
+    public int[] sort(int[] arr, int left, int right){
 
         if (left < right) {
             int middle = left + (right - left) / 2;

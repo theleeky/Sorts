@@ -53,5 +53,14 @@ class SortTests{
         Assertions.assertArrayEquals(expected, binaryTree.sortArray(array));
     }
 
+    @Test
+    @DisplayName("Test if Binary tree removes duplicates")
+    void binarySortDuplicates(){
+        BinaryTree binaryTree = new BinaryTree();
+        int[] array = {1,2,2};
+        int[] expected = {1,2};
+        Assertions.assertArrayEquals(expected, binaryTree.sortArray(array));
+    }
+
 
 }

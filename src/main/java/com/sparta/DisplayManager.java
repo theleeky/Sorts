@@ -21,7 +21,7 @@ public class DisplayManager {
              System.out.println("\n\nHere is your array: \n"+ Arrays.toString(randomArray) + "\n\n");
              nextStep(randomArray);
          } catch (ArithmeticException e) {
-             System.out.println("Please enter a valid opption from the menu");
+             System.out.println("Please enter a valid option from the menu");
          } catch (Exception e){
              System.out.println("You need to enter a positive integer.");
          }

@@ -1,6 +1,8 @@
-package com.sparta;
+package com.sparta.model;
 
-class BubbleSort implements Sorter{
+
+
+public class BubbleSort implements Sorter {
     public int[] sortArray(int[] arrayToSort){
         int n = arrayToSort.length;
 
@@ -14,7 +16,7 @@ class BubbleSort implements Sorter{
                     swapped = true;
                 }
             }
-            if (swapped == false){
+            if (!swapped){
                 break;
             }
         }

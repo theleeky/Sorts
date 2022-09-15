@@ -1,4 +1,10 @@
-package com.sparta;
+package com.sparta.controller;
+
+import com.sparta.model.RemoveDuplicates;
+import com.sparta.model.BinaryTree;
+import com.sparta.model.BubbleSort;
+import com.sparta.model.MergeSort;
+import com.sparta.model.Sorter;
 
 import java.util.Random;
 import java.util.stream.IntStream;

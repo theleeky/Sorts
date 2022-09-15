@@ -1,5 +1,10 @@
 package com.sparta;
 
+import com.sparta.controller.SortManager;
+import com.sparta.model.BinaryTree;
+import com.sparta.model.BubbleSort;
+import com.sparta.model.MergeSort;
+import com.sparta.model.RemoveDuplicates;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

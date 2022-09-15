@@ -1,8 +1,8 @@
-package com.sparta;
+package com.sparta.model;
 
 import java.util.ArrayList;
 
-public class BinaryTree implements Sorter{
+public class BinaryTree implements Sorter {
 
     Node root;
 

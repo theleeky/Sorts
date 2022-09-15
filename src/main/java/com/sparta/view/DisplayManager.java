@@ -2,11 +2,16 @@ package com.sparta.view;
 
 import com.sparta.controller.NotOnMenuException;
 import com.sparta.controller.SortManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class DisplayManager {
+
+    public static Logger logger = LogManager.getLogger(Main.class);
     // this is the file that will interact with the user
     Scanner input = new Scanner(System.in);
     SortManager sortManager = new SortManager();
@@ -24,8 +29,10 @@ public class DisplayManager {
              System.out.println("\n\nHere is your array: \n"+ Arrays.toString(randomArray) + "\n\n");
              nextStep(randomArray);
          } catch (NotOnMenuException e) {
+             logger.error(e.getMessage(), e);
              System.out.println("Please enter a valid option from the menu");
          } catch (Exception e){
+             logger.error(e.getMessage(), e);
              System.out.println("You need to enter a positive integer.");
          }
     }

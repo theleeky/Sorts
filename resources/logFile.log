@@ -1,0 +1,19 @@
+[ERROR] 2022-09-15 13:27:14.538 [main] Main - null
+com.sparta.controller.NotOnMenuException: null
+	at com.sparta.view.DisplayManager.nextStep(DisplayManager.java:49) ~[classes/:?]
+	at com.sparta.view.DisplayManager.display(DisplayManager.java:30) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:31) ~[classes/:?]
+[ERROR] 2022-09-15 13:27:44.050 [main] Main - -1
+java.lang.IllegalArgumentException: -1
+	at java.util.stream.IntPipeline.limit(IntPipeline.java:423) ~[?:?]
+	at com.sparta.controller.SortManager.arrayGenerator(SortManager.java:47) ~[classes/:?]
+	at com.sparta.view.DisplayManager.display(DisplayManager.java:28) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:31) ~[classes/:?]
+[ERROR] 2022-09-15 13:28:22.087 [main] Main - null
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at com.sparta.view.DisplayManager.display(DisplayManager.java:27) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:31) ~[classes/:?]

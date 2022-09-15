@@ -1,5 +1,6 @@
 package com.sparta.view;
 
+import com.sparta.controller.NotOnMenuException;
 import com.sparta.controller.SortManager;
 
 import java.util.Arrays;
@@ -22,13 +23,13 @@ public class DisplayManager {
              int[] randomArray = sortManager.arrayGenerator(arraySize);
              System.out.println("\n\nHere is your array: \n"+ Arrays.toString(randomArray) + "\n\n");
              nextStep(randomArray);
-         } catch (ArithmeticException e) {
+         } catch (NotOnMenuException e) {
              System.out.println("Please enter a valid option from the menu");
          } catch (Exception e){
              System.out.println("You need to enter a positive integer.");
          }
     }
-    private void nextStep(int[] randomArray) throws ArithmeticException {
+    private void nextStep(int[] randomArray) throws NotOnMenuException {
         System.out.println("What type of sorting algorithm would you like to use? ");
         System.out.println("Please enter a corresponding number.");
         System.out.println("1: Bubble Sort Algorithm");
@@ -38,7 +39,7 @@ public class DisplayManager {
         if(pick > 0 && pick < 4){
             System.out.println(Arrays.toString(sortManager.pickSort(pick, randomArray)));
         } else {
-            throw new ArithmeticException();
+            throw new NotOnMenuException();
         }
 
     }

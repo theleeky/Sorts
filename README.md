@@ -128,7 +128,22 @@ I have also used Jupiter to test this implementation.
 ---
 ### Comparison
 
-Bubble Sort Avg time: 258ms
-Merge Sort Avg time: 17ms
-Binary Sort Avg time: 15ms
-
+Using a random array of 10,000 with integers ranging from 0-5000 and removing
+duplicates:
+\
+\
+Bubble Sort Avg time: 258ms\
+Merge Sort Avg time: 17ms\
+Binary Sort Avg time: 15ms\
+\
+I did expect bubble sort to be the slowest due to its time Complexity being 
+O(n<sup>2</sup>) on average. This is because it traverses through the array over
+and over again.\
+I expected the merge sort to be far faster than the bubble sort due
+to its recursive nature and its time complexity being O(n log(n)) on average.\
+I expected the binary sort to be faster than the bubble sort due to its recursive
+nature but not faster than the merge sort. Despite the very slightly faster time
+of the binary sort, I cannot say for certain that the binary sort is definitively 
+faster than the merge sort due to the binary sort ignoring duplicates within the 
+implementation whereas the merge sort actually sorted the array which included duplicates
+before then removing duplicates using another algorithm.

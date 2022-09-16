@@ -42,8 +42,9 @@ public class DisplayManager {
         System.out.println("1: Bubble Sort Algorithm");
         System.out.println("2: Merge Sort Algorithm");
         System.out.println("3: Binary Tree Implementation");
+        System.out.println("4: Compare all of them!");
         int pick = input.nextInt();
-        if(pick > 0 && pick < 4){
+        if(pick > 0 && pick < 5){
             System.out.println(Arrays.toString(sortManager.pickSort(pick, randomArray)));
         } else {
             throw new NotOnMenuException();

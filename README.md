@@ -147,3 +147,5 @@ of the binary sort, I cannot say for certain that the binary sort is definitivel
 faster than the merge sort due to the binary sort ignoring duplicates within the 
 implementation whereas the merge sort actually sorted the array which included duplicates
 before then removing duplicates using another algorithm.
+---
+### Malek Busari
